@@ -43,22 +43,23 @@ public class Main {
             if (myChosenRecipe.equalsIgnoreCase("end")) {
                 loop = false;
             } else if (myChosenRecipe.equalsIgnoreCase("toast")) {
+                System.out.println(toast.toString());
                 if (bread.getQuantity() < toast.getSlicesBreadNeeded()) {
                     System.out.println("You don't have enough slices of bread to make " + toast.getRecipeName() + ", please get more");
                 } else {
-                    System.out.println(toast.toString());
                     bread.setQuantity(bread.getQuantity() - toast.getSlicesBreadNeeded());
                     System.out.println("You have " + bread.getQuantity() + " slices of bread remaining\n");
                 }
             } else if (myChosenRecipe.equalsIgnoreCase("omelet")) {
+                System.out.println(omelet.toString());
                 if (eggs.getQuantity() < omelet.getEggsNeeded()) {
                     System.out.println("You don't have enough eggs to make an " + omelet.getRecipeName() + ", please get more");
                 } else {
-                    System.out.println(omelet.toString());
                     eggs.setQuantity(eggs.getQuantity() - omelet.getEggsNeeded());
                     System.out.println("You have " + eggs.getQuantity() + " eggs remaining\n");
                 }
             } else if (myChosenRecipe.equalsIgnoreCase("sandwich")) {
+                System.out.println(sandwich.toString());
                 if (bread.getQuantity() < sandwich.getSlicesBreadNeeded()) {
                     System.out.println("You don't have enough slices of bread to make a " + sandwich.getRecipeName() + ", please get more");
                 } else if (ham.getQuantity() < sandwich.getHamNeeded()) {
@@ -70,7 +71,6 @@ public class Main {
                 } else if (mayo.getQuantity() < sandwich.getMayoNeeded()) {
                     System.out.println("You don't have enough mayo to make a " + sandwich.getRecipeName() + ", please get more");
                 } else {
-                    System.out.println(sandwich.toString());
                     bread.setQuantity(bread.getQuantity() - sandwich.getSlicesBreadNeeded());
                     System.out.println("You have " + bread.getQuantity() + " slices of bread remaining");
                     ham.setQuantity(ham.getQuantity() - sandwich.getHamNeeded());
