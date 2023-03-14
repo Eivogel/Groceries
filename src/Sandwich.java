@@ -19,7 +19,7 @@ public class Sandwich extends Recipe{
     public String toString(){
         return super.toString() + ": ingredients needed are:\n" +
                 slicesBreadNeeded + " slices of bread\n" +
-                hamNeeded + " pieces of ham\n" +
+                hamNeeded + " slices of ham\n" +
                 cheeseNeeded + " slices of cheese\n" +
                 lettuceNeeded + " crop of lettuce\n" +
                 mayoNeeded + " jar of mayo\n" +

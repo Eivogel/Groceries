@@ -20,6 +20,10 @@ public class Main {
         Groceries lettuce = new Groceries("Lettuce", 0);
         Groceries mayo = new Groceries("Mayo", 1);
 
+        lettuce.addQuantity(1);
+        bread.removeQuantity(2);
+        cheese.addQuantity(4);
+
         // recipes
         Toast toast;
         toast = new Toast();
@@ -30,13 +34,7 @@ public class Main {
         Omelet omelet;
         omelet = new Omelet();
 
-        // using recipes
-        lettuce.addQuantity(1);
-        cheese.addQuantity(4);
-
-        //TODO trying to get scanner to work, but stuck on matching input String to recipeName
-        // Ran out of time. Heard tip to use '.equals' or something to match String input
-
+        // using recipes through Scanner
         Scanner in = new Scanner(System.in);
         boolean loop = true;
         while (loop) {
