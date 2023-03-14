@@ -1,3 +1,7 @@
+// why do I use an abstract class here...
+// Answer: you shouldn't be able to initiate Recipe from here
+// at least at this moment. Maybe in the future to create your own recipes
+
 public abstract class Recipe {
     private String recipeName;
 

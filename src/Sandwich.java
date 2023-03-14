@@ -30,39 +30,20 @@ public class Sandwich extends Recipe{
         return slicesBreadNeeded;
     }
 
-    public void setSlicesBreadNeeded(double slicesBreadNeeded) {
-        this.slicesBreadNeeded = slicesBreadNeeded;
-    }
-
     public double getHamNeeded() {
         return hamNeeded;
-    }
-
-    public void setHamNeeded(double hamNeeded) {
-        this.hamNeeded = hamNeeded;
     }
 
     public double getCheeseNeeded() {
         return cheeseNeeded;
     }
 
-    public void setCheeseNeeded(double cheeseNeeded) {
-        this.cheeseNeeded = cheeseNeeded;
-    }
-
     public double getLettuceNeeded() {
         return lettuceNeeded;
-    }
-
-    public void setLettuceNeeded(double lettuceNeeded) {
-        this.lettuceNeeded = lettuceNeeded;
     }
 
     public double getMayoNeeded() {
         return mayoNeeded;
     }
 
-    public void setMayoNeeded(double mayoNeeded) {
-        this.mayoNeeded = mayoNeeded;
-    }
 }

@@ -1,8 +1,8 @@
-public class Groceries {
+public class Grocery {
     private String groceryName;
     private double quantity;
 
-    public Groceries(String groceryName, double quantity){
+    public Grocery(String groceryName, double quantity){
         this.groceryName = groceryName;
         this.quantity = quantity;
     }

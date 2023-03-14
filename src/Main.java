@@ -13,16 +13,16 @@ public class Main {
     public static void main(String[] args) {
 
         // groceries
-        Groceries bread = new Groceries("Bread", 12);
-        Groceries eggs = new Groceries("Eggs", 5);
-        Groceries ham = new Groceries("Ham", 4);
-        Groceries cheese = new Groceries("Cheese", 1);
-        Groceries lettuce = new Groceries("Lettuce", 0);
-        Groceries mayo = new Groceries("Mayo", 1);
+        Grocery bread = new Grocery("Bread", 12);
+        Grocery eggs = new Grocery("Eggs", 5);
+        Grocery ham = new Grocery("Ham", 4);
+        Grocery cheese = new Grocery("Cheese", 1);
+        Grocery lettuce = new Grocery("Lettuce", 0);
+        Grocery mayo = new Grocery("Mayo", 1);
 
         lettuce.addQuantity(1);
         bread.removeQuantity(2);
-        cheese.addQuantity(4);
+        cheese.addQuantity(2);
 
         // recipes
         Toast toast;
@@ -38,9 +38,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
         boolean loop = true;
         while (loop) {
-            System.out.println("Type recipe you want to make (Toast, Sandwich or Omelet), or type end to exit: ");
+            System.out.println("Type recipe you want to make (Toast, Sandwich or Omelet), or type exit to exit: ");
             String myChosenRecipe = in.nextLine();
-            if (myChosenRecipe.equalsIgnoreCase("end")) {
+            if (myChosenRecipe.equalsIgnoreCase("exit")) {
                 loop = false;
             } else if (myChosenRecipe.equalsIgnoreCase("toast")) {
                 System.out.println(toast.toString());
